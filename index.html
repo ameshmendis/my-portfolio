@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto+Flex:opsz,wdth,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,92.2,100..1000,39,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+    <div class="logo">Company Logo</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul> 
+    <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+    </nav>
+    
+
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to My Website</h1>
+        <p>Discover amazing features and explore the possibilities with us.</p>
+        <a href="#features" class="btn btn-primary">Get Started</a>
+        <a href="#features" class="btn btn-secondary">Learn More</a>
+    </div>
+    </section>
+
+<!-- About Section -->
+    <section id="about" class="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+                We are passionate about creating websites that are simple, fast, and modern. 
+                Our goal is to deliver experiences that users love.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="images/about.jpg" alt="About Image" draggable="false">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+    <div class="features-container">
+        <h2>Our Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="/images/fast performance.png" alt="Feature 1" draggable="false">
+                <h3>Fast Performance</h3>
+                <p>Our websites are optimized to load quickly and smoothly on all devices.</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/responsive.png" alt="Feature 2" draggable="false">
+                <h3>Responsive Design</h3>
+                <p>Looks great on desktops, tablets, and mobile phones.</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/ui.png" alt="Feature 3" draggable="false">
+                <h3>Modern UI</h3>
+                <p>Clean and modern design to keep users engaged and satisfied.</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/cust.png" alt="Feature 4" draggable="false">
+                <h3>Easy Customization</h3>
+                <p>Modify colors, fonts, and content easily to fit your style.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+    <div class="contact-container">
+        <div class="contact-image">
+            <img src="images/contact.jpg" alt="Contact Us" draggable="false">
+        </div>
+        <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to work with us? Send a message!</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+    </section> 
+    <!-- footer -->
+     <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>MyWebsite</h3>
+            <p>Creating simple, fast, and modern websites that users love.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+    </div>
+    </footer>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active'); // add/remove 'active' class
+    });
+</script>
+
+
+
+</body>
+</html>
